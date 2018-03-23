@@ -46,7 +46,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ParallaxScrolling.cs" />
+     <Compile Include="Assets\Scripts\Bird.cs" />
+     <Compile Include="Assets\Scripts\Brick.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Constants.cs" />
+     <Compile Include="Assets\Scripts\GameManger.cs" />
+     <Compile Include="Assets\Scripts\ParallaxScrolling.cs" />
+     <Compile Include="Assets\Scripts\Pig.cs" />
+     <Compile Include="Assets\Scripts\SlingShot.cs" />
+     <Compile Include="Assets\Scripts\SlingShotState.cs" />
+     <None Include="Assets\Plugins\GoKit\easing\easeEquationsLicense.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity 5.5.4/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -65,6 +74,10 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>D:/Unity 5.5.4/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{43DD47B3-ADC1-1100-E815-DBF010F4B7D3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
