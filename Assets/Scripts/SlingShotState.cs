@@ -18,4 +18,14 @@ namespace Assets.Scripts
 		Throw        //发射中
 	}
 
+
+	//游戏状态
+	public enum GameState
+	{
+		Start,
+		BirdMovingToSlingshot,    //待发射
+		Playing,                  //发射
+		Wan,
+		Lost
+	}
 }

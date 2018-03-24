@@ -15,10 +15,13 @@ public class SlingShot : MonoBehaviour {
 	public Transform LeftSlingshotPostion, RightSlingshotPosition;
 
 	public GameObject BirdToThrow;     //要发射的鸟 Idele, Flying
-	[HideInInspector]
 
+	[HideInInspector]
 	public float BirdDistance = 2;     //皮筋拉动最大长度
 	public SlingShotState slingShotState;
+
+	[HideInInspector]
+	public float TimeThrow;          //经历的时间
 
 	void Start () {
 		SlingshotLinerenderer01.sortingLayerName="foreground";
@@ -73,6 +76,7 @@ public class SlingShot : MonoBehaviour {
 			else   //鼠标弹起 
 			{
 				SetTrajectoryLineRenderersActive (false);
+				TimeThrow = Time.time;     //设定起始时间
 				float distance = Vector3.Distance (SlingshotMiddleVector, BirdToThrow.transform.position);
 				if (distance > 1) {
 					SetSlingShotLineRenderersActive (false);  //隐藏皮筋

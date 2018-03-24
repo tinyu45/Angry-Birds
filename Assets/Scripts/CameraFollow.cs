@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour {
 
 	public bool IsFlollowing;
+	[HideInInspector]
 	public Transform BirdToFollow;
 	public const float minCameraX = -7;
 	public const float maxCameraX=11.3f;
